@@ -37,6 +37,7 @@ project {
 object TestOrDeployToNexus : BuildType({
     name = "Test or Deploy To Nexus"
 
+    artifactRules = "+:target/*.jar"
     publishArtifacts = PublishMode.SUCCESSFUL
 
     vcs {
